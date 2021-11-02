@@ -1,6 +1,6 @@
 html{
-    background-color: rgb(110, 202, 81);
-    font-family: 'Archivo', sans-serif;
+    background-color: white);
+    font-family: sans-serif;
     text-align: left, 10px;
 }
 header{
@@ -12,8 +12,29 @@ header{
 
 nav{
     color:white;
+    background-color: black;
+    align-content: center;
+    display: inline;
+    padding-left:3px;
+    padding-right:3px;
+}
+     
+a{
+    color: black;
+    text-decoration: none;
+      font-weight: 600;
+    background-color: white;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin: 5px;
+    border: solid black 3px;
+    border-radius: 200px;
 }
 
-a{
-    color:white;
+img{
+    max-width: 100%;
 }
+
+h2{
+    float:left
