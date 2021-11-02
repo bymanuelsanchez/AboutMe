@@ -1,11 +1,19 @@
 html{
-    background-color: rgba(100, 200, 100, 0.5);
-    font-family: sans-serif;
+    background-color: rgb(110, 202, 81);
+    font-family: 'Archivo', sans-serif;
     text-align: left, 10px;
 }
 header{
-    color: white;
+    color: black;
     font-size: 30px;
     left: 10px;
     top: 15px;
+}
+
+nav{
+    color:white;
+}
+
+a{
+    color:white;
 }
