@@ -1,0 +1,49 @@
+html{
+    background-color: rgb(235, 235, 235);
+    font-family: sans-serif;
+}
+
+/*------link-----*/
+
+a{
+    color:green;
+}
+
+.rojo{
+    color:red;
+}
+
+a:visited{
+    color: sandybrown;
+}
+
+a:visited.rojo {
+    color: rgb(12, 138, 160);
+}
+
+a:hover.rojo {
+    color: rgb(31, 204, 31);
+    font-weight: bold;
+    font-style: normal;
+}
+
+a:hover {
+    color: rgb(229, 157, 223);
+    font-style: oblique;
+}
+
+a:focus{
+    outline: none !important;
+    border: 10px dotted rgb(255, 0, 0);
+    background-color: hotpink;
+}   
+
+/*------imput-----*/
+
+input[type="text"]:focus{
+    box-shadow: 0 0 5px green;
+}
+
+input[type="email"]:focus{
+    box-shadow: 0 0 5px red;
+}
