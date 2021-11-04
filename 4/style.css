@@ -3,7 +3,24 @@ html{
     font-family: sans-serif;
 }
 
-/*------link-----*/
+/*------------H-----------*/
+
+h1{
+    color: rgb(255, 51, 51);
+}
+
+h2{
+    color:rgb(82, 82, 82);
+    font-family: serif;
+}
+
+h2:hover{
+    color:rgb(82, 82, 82);
+    font-family: sans-serif;
+}
+
+
+/*------------link-----------*/
 
 a{
     color:green;
@@ -38,12 +55,62 @@ a:focus{
     background-color: hotpink;
 }   
 
-/*------imput-----*/
+/*------------input-----------*/
+
+input:focus{
+    box-shadow: 0 0 5px red;
+}
 
 input[type="text"]:focus{
     box-shadow: 0 0 5px green;
 }
 
-input[type="email"]:focus{
-    box-shadow: 0 0 5px red;
+input[type="checkbox"]:checked{
+    box-shadow: 0 0 5px rgb(0, 255, 106);
+}
+
+input[type="checkbox"]:checked + p.checkbox{
+    color: red;
+}
+
+/*------------quien manda?-----------*/
+
+p{
+    color: red;
+}
+
+span{
+    color: green;
+}
+
+.clasespan{
+    color: yellow;
+}
+
+span.clasespan{
+    color: pink;
+}
+
+p span.clasespan{
+    color: black;
+}
+
+.clasep .clasespan{
+    color: rgb(0, 255, 106);
+}
+
+p.clasep span.clasespan{
+    color: white;
+}
+    
+#spanid{
+    color: violet;
+}
+
+span#spanid{
+    color: rgb(240, 151, 17);
+}
+
+.clasep span#spanid{
+    color: rgb(136, 22, 69);
 }

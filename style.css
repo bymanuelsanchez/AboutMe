@@ -1,7 +1,8 @@
 html{
-    background-color: white);
+    background-color: white;
     font-family: sans-serif;
     text-align: left, 10px;
+    font-family: 'Inter', sans-serif;
 }
 header{
     color: black;
@@ -10,31 +11,26 @@ header{
     top: 15px;
 }
 
-nav{
-    color:white;
-    background-color: black;
-    align-content: center;
-    display: inline;
-    padding-left:3px;
-    padding-right:3px;
-}
-     
-a{
-    color: black;
-    text-decoration: none;
-      font-weight: 600;
-    background-color: white;
-    padding: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
-    margin: 5px;
-    border: solid black 3px;
-    border-radius: 200px;
-}
 
+     
 img{
     max-width: 100%;
 }
 
-h2{
-    float:left
+h1, h2, h3 {
+    font-family: 'Chivo', sans-serif;
+}
+
+h3{
+    color: tomato;
+    margin-bottom: 5%;
+}
+
+nav, footer, a.nav{
+    color: tomato;
+    background-color: rgb(224, 224, 224);
+}
+
+header, main{
+    padding: 10%;
+}
