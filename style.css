@@ -1,35 +1,124 @@
-html{
-    background-color: white;
+/*------------declaraciones-----------*/
+
+:root{
+    --negro: black;
+    --blanco: white;
+    --gris: rgba(241, 241, 241, 1);
+    --pop_rojo: tomato;
+    --pop_verde: rgba(157,221,169,1);
+  }
+
+/*------------general-----------*/
+  html{
+    background-color: var(--blanco);
     font-family: sans-serif;
     text-align: left, 10px;
     font-family: 'Inter', sans-serif;
 }
+
+/*------------nav-----------*/
+
+nav.nav{
+    color: var(--pop_rojo);
+    background-color: var(--gris);
+}
+
+ul.nav_list{
+    color: var(--pop_rojo);
+}
+
+li.nav_item{
+    color: var(--pop_rojo);
+    list-style: none;
+    display: inline;
+}
+
+a.nav_a{
+    color: var(--pop_rojo);
+}
+
+/*------------header-----------*/
+
 header{
-    color: black;
+    color: var(--negro);
     font-size: 30px;
     left: 10px;
     top: 15px;
 }
 
-
+/*------------fotos-----------*/
      
 img{
     max-width: 100%;
 }
+
+/*------------tipos-----------*/
 
 h1, h2, h3 {
     font-family: 'Chivo', sans-serif;
 }
 
 h3{
-    color: tomato;
+    color: var(--pop_rojo);
     margin-bottom: 5%;
 }
 
-nav, footer, a.nav{
-    color: tomato;
-    background-color: rgb(224, 224, 224);
+h2.trabajo{
+    color: var(--pop_rojo);
 }
+
+h2.trabajo:visited{
+    color: var(--pop_verde);
+}
+
+h2.trabajo:hover{
+    color: var(--pop_verde);
+}
+
+
+
+/*------------contacto-----------*/
+
+ul.contacto{
+    color: var(--pop_rojo);
+}
+
+li.contacto_item{
+    color: var(--pop_rojo);
+    list-style: none;
+    display: inline;
+}
+
+a.contacto_a{
+    color: var(--pop_rojo);
+    background-color: var(--gris);
+    padding: 12px;
+    margin: 4px;
+    border-radius: 100px;
+    border: var(--pop_rojo) 100px;
+}
+
+/*------------footer-----------*/
+
+footer.footer{
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+
+footer.footer_list{
+    color: var(--blanco);
+}
+
+li.footer_item{
+    color: var(--blanco);
+}
+
+a.footer_a{
+    color: var(--blanco);
+    list-style: none;
+}
+
+/*------------aire-----------*/
 
 header, main{
     padding: 10%;
