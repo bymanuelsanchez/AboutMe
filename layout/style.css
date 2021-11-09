@@ -24,7 +24,6 @@ html{
   }
   
   .h1-header{
-    float: right;
     font-size: 25px;
   }
   
@@ -32,6 +31,13 @@ html{
     border-radius: 100%;
     width: 70px;
     height: 70px;
+    margin-left: auto;
+  }
+
+  .header{
+      display: flex;
+      align-items: center;
+
   }
   
   /*nav*/
