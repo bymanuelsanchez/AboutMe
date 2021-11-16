@@ -131,9 +131,9 @@ button.boton_form{
         width: 1024px;
         margin-left: auto;
         margin-right: auto;
-        background-color: lightyellow;
+        /*background-color: lightyellow;*/
     }
     section{
-        background-color: mediumpurple;
+        /*background-color: mediumpurple;*/
     }
 }
