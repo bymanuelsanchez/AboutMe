@@ -1,0 +1,1 @@
+Explicar código CSS de GRID aquí:

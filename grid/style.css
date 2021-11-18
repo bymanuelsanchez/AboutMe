@@ -1,1 +1,78 @@
-/*declaraciones*/
+/* Grid container */
+
+.grid__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*ESPACIADO*/
+
+[class^="grid_cell"] {
+    margin: 8px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-left: 10px;
+}
+
+/*GRID cell*/
+
+.grid {
+    display: flex;
+}
+
+.grid_cell-25  {
+    flex: 25%;
+    background-color:rgb(238, 238, 238);
+}
+
+.grid_cell-50 {
+    flex: 50%;
+    background-color: rgb(238, 238, 238);
+}
+
+.grid_cell-100 {
+    flex: 100%;
+    background-color: rgb(238, 238, 238);
+}
+
+
+@media all and (min-width: 600px){
+    
+    html{
+        background-color:silver;
+    }
+    .grid__container {
+        flex-direction: row;
+    }
+}
+
+@media all and (min-width: 1024px){
+    
+    html{
+        background-color: pink;
+    }
+    
+    .grid__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .grid_cell-25  {
+        flex: 100%;
+    }
+    
+    .grid_cell-50 {
+        flex: 100%;
+    }
+    
+    .grid_cell-100 {
+        flex: 100%;
+    }
+
+    .grid_row2{
+        display: flex;
+
+    }
+}
