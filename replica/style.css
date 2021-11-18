@@ -61,12 +61,28 @@ ul{
 
 li{
     display: inline;
-    padding-left: 10px;
+    padding-left: 0px;
     padding-right: 10px;
 }
 
 a.reach_mail{
     color: var(--pop_verde);
+}
+
+a:hover{
+    color: var(--pop_verde);
+}
+
+a.reach_mail:hover{
+    color: var(--gris_oscuro);
+}
+
+a:hover:visited{
+    color: var(--pop_verde);
+}
+
+a:visited{
+    color: var(--gris_oscuro);
 }
 
 p.reach_text{
@@ -92,9 +108,21 @@ label{
 }
 
 input{
-    padding: 12px;
+    padding: 97px;
     padding-top: 12px;
     padding-bottom: 12px;
+    padding-left: 12px;
+}
+
+input.message{
+    padding: 97px;
+    padding-top: 12px;
+    padding-bottom: 97px;
+    padding-left: 12px;
+}
+
+input:active{
+    border-color: var(--pop_verde);
 }
 
 button.boton_form{
@@ -118,7 +146,7 @@ button.boton_form{
         justify-content: center;
     }
     section{
-        padding-right: 30px;
+        padding-right: 50px;
     }
     form{
         float: right;
@@ -132,8 +160,5 @@ button.boton_form{
         margin-left: auto;
         margin-right: auto;
         /*background-color: lightyellow;*/
-    }
-    section{
-        /*background-color: mediumpurple;*/
     }
 }
