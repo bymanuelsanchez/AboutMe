@@ -1,18 +1,33 @@
+/*______________DECLRACIONES______________*/
+
+:root{
+    --fondo_celda: rgb(147, 205, 238);
+    --fondo_600: rgb(255, 255, 147);
+    --fondo_1024: pink;
+}
+
+/*______________Estilo______________*/
+
+html{
+    font-family: sans-serif;
+}
+
+p{
+    font-size: 15px;
+}
+
+a{
+    color: white;
+}
+
+/*_________________GRID_________________*/
+
 /* Grid container */
 
 .grid__container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
-
-/*ESPACIADO*/
-
-[class^="grid_cell"] {
-    margin: 8px;
-    border-radius: 5px;
-    padding-left: 15px;
-    padding-left: 10px;
 }
 
 /*GRID cell*/
@@ -23,34 +38,56 @@
 
 .grid_cell-25  {
     flex: 25%;
-    background-color:rgb(238, 238, 238);
 }
 
 .grid_cell-50 {
     flex: 50%;
-    background-color: rgb(238, 238, 238);
+}
+
+.grid_cell-75 {
+    flex:75%;
 }
 
 .grid_cell-100 {
     flex: 100%;
-    background-color: rgb(238, 238, 238);
 }
 
+/*PROPIEDADES GRID CELL*/
+
+[class^="grid_cell"] {
+    background-color:var(--fondo_celda);
+    margin: 1%;
+    border-radius: 5px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}
+
+.grid_cell-100{
+    padding-bottom: 0%;
+}
+
+
+/*__________________MEDIA___________________*/
+
+/*MEDIA 600px*/
 
 @media all and (min-width: 600px){
     
     html{
-        background-color:silver;
+        background-color: var(--fondo_600);
     }
     .grid__container {
         flex-direction: row;
     }
 }
 
+/*MEDIA 1024px*/
+
 @media all and (min-width: 1024px){
     
     html{
-        background-color: pink;
+        background-color: var(--fondo_1024);
     }
     
     .grid__container {
