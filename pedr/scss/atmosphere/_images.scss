@@ -1,8 +1,8 @@
 div.foto{
     width: 200px;
     height: 200px;
-    background-color: orange;
-    border: solid 6px white;
+    background-color: tomato;
+    border: solid 4px white;
     border-radius: 50%;
     background-image: url(../recursos/avatar.jpg);
     background-size: cover;
@@ -10,4 +10,13 @@ div.foto{
     background-position: center;
     margin-left: auto;
     margin-right: auto;
+    transition: $time;
+}
+
+div.foto:hover{
+    /*filter: invert(100%);*/
+    border: solid 4px $color_pop;
+    width: 220px;
+    height: 220px;
+    margin-top: 0px;
 }

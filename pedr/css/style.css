@@ -8,7 +8,7 @@ body, html {
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #5fb35c;
+  background-color: #161616;
 }
 
 .grid {
@@ -40,6 +40,10 @@ body {
           flex: 0 0 33%;
 }
 
+.foto {
+  margin-top: 10px;
+}
+
 body {
   font-family: "Chivo";
   color: white;
@@ -47,11 +51,17 @@ body {
 
 h1 {
   font-weight: bold;
+  margin-top: 55px;
+  margin-bottom: 10px;
+  font-size: 30px;
 }
 
 h2 {
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 55px;
+  color: tomato;
+  font-size: 20px;
 }
 
 .perfil {
@@ -62,11 +72,56 @@ section.botones {
   text-align: center;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.log_out {
+  margin: 20px;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a.log_out {
+  color: tomato;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a.log_out:hover {
+  color: white;
+}
+
+svg {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+div.logo {
+  color: tomato;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+div.logo:hover {
+  color: lime;
+}
+
 div.foto {
   width: 200px;
   height: 200px;
-  background-color: orange;
-  border: solid 6px white;
+  background-color: tomato;
+  border: solid 4px white;
   border-radius: 50%;
   background-image: url(../recursos/avatar.jpg);
   background-size: cover;
@@ -74,17 +129,33 @@ div.foto {
   background-position: center;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+div.foto:hover {
+  /*filter: invert(100%);*/
+  border: solid 4px tomato;
+  width: 220px;
+  height: 220px;
+  margin-top: 0px;
 }
 
 .card-link {
   display: inline-block;
   padding: 18px;
   margin: 12px;
-  background-color: #324e32;
+  background-color: #252525;
   color: white;
   border-radius: 15px;
   text-align: center;
   width: 100px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.card-link:hover {
+  background-color: tomato;
 }
 .card-link:visited {
   color: white;
@@ -113,13 +184,11 @@ div.foto {
   margin-bottom: 18px;
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 700px) {
   .card-link__container {
     max-width: 400px;
   }
 }
-@media all and (max-width: 320px) {
-  .card-link__container {
-    max-width: 100px;
-  }
+a {
+  text-decoration: none;
 }

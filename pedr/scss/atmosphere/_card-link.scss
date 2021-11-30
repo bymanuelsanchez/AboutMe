@@ -3,13 +3,19 @@
     padding: $space--medium;
     margin: $space;
     background-color: $greenoscuro;
-    color: white;
+    color: $color_claro;
     border-radius: 15px;
     text-align: center;
     width: 100px;
+    text-decoration: none;
+    transition: $time;
 
+    &:hover{
+        background-color: $color_pop;
+    }
+    
     &:visited{
-        color: white;
+        color: $color_claro;
     }
 
     &__container{
@@ -30,16 +36,13 @@
     }
 }
 
-@media all and (max-width: 1000px){
+@media all and (max-width: 700px){
     
     .card-link__container {
         max-width: 400px;
     }
 }
 
-@media all and (max-width: 320px){
-    
-    .card-link__container {
-        max-width: 100px;
-    }
+a{
+    text-decoration: none;
 }
