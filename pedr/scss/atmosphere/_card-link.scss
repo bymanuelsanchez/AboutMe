@@ -1,0 +1,45 @@
+.card-link {
+    display: inline-block;
+    padding: $space--medium;
+    margin: $space;
+    background-color: $greenoscuro;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 100px;
+
+    &:visited{
+        color: white;
+    }
+
+    &__container{
+        display: flex;
+        @include max-width (680px);
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    svg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: $space--medium;
+    }
+}
+
+@media all and (max-width: 1000px){
+    
+    .card-link__container {
+        max-width: 400px;
+    }
+}
+
+@media all and (max-width: 320px){
+    
+    .card-link__container {
+        max-width: 100px;
+    }
+}
